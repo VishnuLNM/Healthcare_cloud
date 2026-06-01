@@ -1,30 +1,73 @@
-# Healthcare_cloud
+# Healthcare DevOps CI/CD Project
 
 ## Project Overview
 
-This project demonstrates an end-to-end DevOps CI/CD pipeline for deploying a healthcare application using Terraform, Ansible, Jenkins, Docker, Kubernetes, Prometheus and Grafana.
+This project demonstrates an end-to-end DevOps CI/CD pipeline for deploying a healthcare application using Jenkins, Docker, Kubernetes, Prometheus, Grafana, Ansible and AWS.
 
 ## Tools Used
 
-- Terraform
-- AWS EC2
-- Ansible
-- Jenkins
-- Docker
-- Kubernetes
-- Prometheus
-- Grafana
+* Jenkins
+* Docker
+* Kubernetes
+* AWS EC2
+* Ansible
+* Prometheus
+* Grafana
+* GitHub
+* Maven
 
 ## Architecture
 
-GitHub → Jenkins → Maven → Docker → Docker Hub → Kubernetes → Monitoring
+GitHub → Jenkins → Maven Build → Docker → Docker Hub → Kubernetes → Prometheus → Grafana
 
 ## Workflow
 
-1. Terraform provisions infrastructure
-2. Ansible installs dependencies
-3. Jenkins pipeline builds application
-4. Docker image created and pushed
-5. Kubernetes deploys containerized app
-6. Prometheus monitors infrastructure
-7. Grafana dashboards visualize metrics
+1. Source code pushed to GitHub
+2. Jenkins pipeline triggered
+3. Maven builds the application
+4. Docker image created and pushed to Docker Hub
+5. Kubernetes deploys application
+6. Prometheus collects metrics
+7. Grafana visualizes monitoring dashboards
+
+## Screenshots
+
+### Jenkins Pipeline
+
+![Jenkins Pipeline](Jenkins-Build-Success.png)
+
+### Kubernetes Deployment
+
+![Kubernetes Pods](kubernetes-pods.png)
+
+### Prometheus Monitoring
+
+![Prometheus](prometheus-Monitor.png)
+
+### Grafana Dashboard
+
+![Grafana](grafana-Monitor.png)
+
+## Troubleshooting
+
+### Jenkins Build Failure
+
+* Checked Jenkins console logs
+* Verified Maven dependencies
+* Fixed configuration issues
+
+### Kubernetes Pod Failure
+
+Commands used:
+
+kubectl get pods
+
+kubectl describe pod <pod-name>
+
+kubectl logs <pod-name>
+
+### Monitoring Issue
+
+* Verified Prometheus targets
+* Verified node_exporter running
+* Checked Grafana datasource configuration
