@@ -1,8 +1,11 @@
 # Healthcare DevOps CI/CD Project
 
+End-to-end DevOps implementation for deploying a healthcare application using Jenkins, Docker, Kubernetes, AWS, Ansible, Prometheus and Grafana.
+
 ## Project Overview
 
-This project demonstrates an end-to-end DevOps CI/CD pipeline for deploying a healthcare application using Jenkins, Docker, Kubernetes, Prometheus, Grafana, Ansible and AWS.
+This project demonstrates a complete CI/CD pipeline where code is built, containerized, deployed to Kubernetes, and monitored using Prometheus and Grafana.
+
 
 ## Tools Used
 
