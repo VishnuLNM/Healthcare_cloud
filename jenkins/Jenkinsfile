@@ -1,1 +1,32 @@
+pipeline {
+ agent any
 
+ stages {
+
+   stage('Git Clone') {
+     steps {
+       git branch: 'master',
+       url: 'YOUR_REPOSITORY_URL'
+       sh 'mvn clean package'
+     }
+   }
+
+   stage('Build Docker Image') {
+     steps {
+       sh 'docker build -t healthcaredemo:1 .'
+     }
+   }
+
+   stage('Docker Push') {
+     steps {
+       sh 'docker push healthcaredemo:1'
+     }
+   }
+
+   stage('Deploy to Kubernetes') {
+     steps {
+       sh 'kubectl apply -f kubernetes.yml'
+     }
+   }
+ }
+}
