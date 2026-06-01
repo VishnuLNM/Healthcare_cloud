@@ -31,6 +31,8 @@ GitHub → Jenkins → Maven Build → Docker → Docker Hub → Kubernetes → 
 7. Grafana visualizes monitoring dashboards
 
 ## Screenshots
+### Architecture
+![Healthcare Architecture](Healthcare_Architecture.png)
 
 ### Jenkins Pipeline
 
