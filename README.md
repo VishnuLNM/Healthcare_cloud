@@ -61,6 +61,23 @@ GitHub → Jenkins → Maven Build → Docker → Docker Hub → Kubernetes → 
 * Verified Maven dependencies
 * Fixed configuration issues
 
+
+## Kubernetes Deployment
+
+The healthcare application was deployed to Kubernetes using Deployment and Service YAML files.
+
+Kubernetes files included:
+
+* deployment.yaml
+* service.yaml
+
+Commands used:
+
+kubectl get pods
+
+kubectl get svc
+
+kubectl get all
 ### Kubernetes Pod Failure
 
 Commands used:
@@ -70,6 +87,7 @@ kubectl get pods
 kubectl describe pod <pod-name>
 
 kubectl logs <pod-name>
+
 
 ### Monitoring Issue
 
