@@ -35,23 +35,23 @@ GitHub → Jenkins → Maven Build → Docker → Docker Hub → Kubernetes → 
 
 ## Screenshots
 ### Architecture
-![Healthcare Architecture](Healthcare_Architecture.png)
+![Healthcare Architecture](screenshots/healthcare_Architecture.png)
 
 ### Jenkins Pipeline
 
-![Jenkins Pipeline](Jenkins-Build-Success.png)
+![Jenkins Pipeline](screenshots/jenkins-Build-Success.png)
 
 ### Kubernetes Deployment
 
-![Kubernetes Pods](kubernetes-pod.png)
+![Kubernetes Pods](screenshots/kubernetes-pod.png)
 
 ### Prometheus Monitoring
 
-![Prometheus](Prometheus_Monitor.png)
+![Prometheus](screenshots/prometheus_Monitor.png)
 
 ### Grafana Dashboard
 
-![Grafana](Grafana_Monitor.png)
+![Grafana](screenshots/grafana_Monitor.png)
 
 ## Troubleshooting
 
