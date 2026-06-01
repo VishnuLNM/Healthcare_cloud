@@ -38,15 +38,15 @@ GitHub → Jenkins → Maven Build → Docker → Docker Hub → Kubernetes → 
 
 ### Kubernetes Deployment
 
-![Kubernetes Pods](kubernetes-pods.png)
+![Kubernetes Pods](Kubernetes-pod.png)
 
 ### Prometheus Monitoring
 
-![Prometheus](prometheus-Monitor.png)
+![Prometheus](Prometheus-Monitor.png)
 
 ### Grafana Dashboard
 
-![Grafana](grafana-Monitor.png)
+![Grafana](Grafana-Monitor.png)
 
 ## Troubleshooting
 
